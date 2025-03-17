@@ -84,7 +84,7 @@ Antes de começar, é recomendável ter conhecimentos básicos sobre:
 🔹 Como aplicar **SVGs como backgrounds personalizados**.
 
 #### Exemplo:
-<img src="./Svgs/iebt_logo.svg" height="150">
+<img src="./Svgs/iebt_logo.svg" height="70" style="margin-right: 20px;"><img src="./Svgs/music_icon.svg" height="70">
 
 ---
 
@@ -94,7 +94,7 @@ Antes de começar, é recomendável ter conhecimentos básicos sobre:
 🔹 Casos de uso reais aplicados a dashboards.  
 
 #### Exemplo:
-<img src="./_Aux/Parametros1.png" height="200"><img src="./_Aux/Parametros2.png" height="200"><img src="./_Aux/Parametros3.png" height="200">
+<img src="./_Aux/Parametros1.png" height="200" style="margin-right: 20px;"><img src="./_Aux/Parametros2.png" height="200" style="margin-right: 20px;"><img src="./_Aux/Parametros3.png" height="200">
 
 ---
 
@@ -103,7 +103,7 @@ Antes de começar, é recomendável ter conhecimentos básicos sobre:
 🔹 Aplicação para **cálculos dinâmicos** e análises flexíveis.  
 
 #### Exemplo:
-<img src="./_Aux/Grupo_Calculo1.png" height="200"><img src="./_Aux/Grupo_Calculo2.png" height="200"><img src="./_Aux/Grupo_Calculo3.png" height="200">
+<img src="./_Aux/Grupo_Calculo1.png" height="200" style="margin-right: 20px;"><img src="./_Aux/Grupo_Calculo2.png" height="200" style="margin-right: 20px;"><img src="./_Aux/Grupo_Calculo3.png" height="200">
 
 ---
 
@@ -114,4 +114,4 @@ Antes de começar, é recomendável ter conhecimentos básicos sobre:
 🔹 Apresentação de uma **Arquitetura de ETL Real**, desenvolvida no cliente.
 
 #### Exemplo:
-<img src="./_Aux/Airflow.png" height="300"><img src="./_Aux/Airflow2.png" height="300">
+<img src="./_Aux/Airflow.png" height="300" style="margin-right: 20px;"><img src="./_Aux/Airflow2.png" height="300">
