@@ -16,7 +16,7 @@
   - [🖼️ Módulo 2: Construindo SVGs](#módulo-2-construindo-svgs)
   - [⚙️ Módulo 3: Avançando com Parâmetros](#módulo-3-avançando-com-parâmetros)
   - [📊 Módulo 4: Conhecendo Grupos de Cálculo](#módulo-4-conhecendo-grupos-de-cálculo)
-  - [🛠️ Módulo 5: Bônus em Engenharia de Dados](#módulo-5-bônus-em-engenharia-de-dados)
+  - [🛠️ Módulo Bônus: Case de Engenharia de Dados](#módulo-bônus-case-de-engenharia-de-dados)
 
 ---
 
@@ -77,7 +77,7 @@ Antes de começar, é recomendável ter conhecimentos básicos sobre:
 
 ---
 
-### Módulo 5: Bônus em Engenharia de Dados
+### Módulo Bônus: Case de Engenharia de Dados
 🔹 **Introdução ao Apache Airflow** e sua importância.  
 🔹 Como **orquestrar pipelines de dados** de forma eficiente.  
 🔹 Integração entre **Power BI e Engenharia de Dados**.  
