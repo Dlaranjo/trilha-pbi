@@ -108,10 +108,10 @@ Antes de começar, é recomendável ter conhecimentos básicos sobre:
 ---
 
 ### Módulo Bônus: Case de Engenharia de Dados
-🔹 Apresentação da **Arquitetura de ETL** desenvolvida no cliente.
 🔹 **Introdução ao Apache Airflow** e sua importância.  
 🔹 Como **orquestrar pipelines de dados** de forma eficiente.  
 🔹 Integração entre **Airflow e Spark**.  
+🔹 Apresentação de uma **Arquitetura de ETL Real**, desenvolvida no cliente.
 
 #### Exemplo:
 <img src="./_Aux/Airflow.png" height="300"><img src="./_Aux/Airflow2.png" height="300">
