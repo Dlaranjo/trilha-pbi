@@ -21,7 +21,7 @@
 ---
 
 ## Visão Geral
-Esta trilha foi criada para **compartilhar técnicas avançadas** em Power BI e Engenharia de Dados que aprendi, experimentei e implementei ao longo da minha jornada (Mesmo que breve hehe).  
+Esta trilha foi criada para **compartilhar técnicas avançadas** em Power BI e Engenharia de Dados que aprendi, experimentei e implementei ao longo da minha jornada (Mesmo que breve 😅).  
 
 **🚀 Objetivo:**  
 Desejo ir além da teoria, capacitando os participantes na prática para gerar impacto real em suas entregas diárias.
