@@ -1,0 +1,33 @@
+table 'Grupo de cálculo'
+	lineageTag: 46d3f2a8-54de-4259-9a83-6f15af68a770
+
+	calculationGroup
+
+		calculationItem José = "José"
+
+		calculationItem Maria = "Maria"
+
+		calculationItem Um = 1
+
+		calculationItem Métrica = SELECTEDMEASURE()
+
+		calculationItem 'Nome da Métrica' = SELECTEDMEASURENAME()
+
+	column 'Coluna do grupo de cálculo'
+		dataType: string
+		lineageTag: 9abd2cb4-511d-4754-a18f-e9b7f81f1bbb
+		summarizeBy: none
+		sourceColumn: Name
+		sortByColumn: Ordinal
+
+		annotation SummarizationSetBy = Automatic
+
+	column Ordinal
+		dataType: int64
+		formatString: 0
+		lineageTag: 55adf710-fa0c-4684-a944-9e1133b14585
+		summarizeBy: sum
+		sourceColumn: Ordinal
+
+		annotation SummarizationSetBy = Automatic
+

@@ -1,0 +1,148 @@
+table fMain
+	lineageTag: 3e6e7fc6-e7ae-453a-a443-4afffec77a5e
+
+	column User_ID
+		dataType: string
+		lineageTag: eae16875-ad9f-4f13-8d35-f81eb18d7e52
+		summarizeBy: none
+		sourceColumn: User_ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column Age
+		dataType: int64
+		formatString: 0
+		lineageTag: 65919180-c2ae-41f7-aa2d-b24ede015a62
+		summarizeBy: sum
+		sourceColumn: Age
+
+		annotation SummarizationSetBy = Automatic
+
+	column Country
+		dataType: string
+		lineageTag: 75eb5387-8fe4-4b64-bb84-527dd47cb2e1
+		summarizeBy: none
+		sourceColumn: Country
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Streaming Platform'
+		dataType: string
+		lineageTag: 1350b7f2-aa02-4a63-8535-76ffedfb61a3
+		summarizeBy: none
+		sourceColumn: Streaming Platform
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Top Genre'
+		dataType: string
+		lineageTag: c1583306-6964-4042-8485-14cee8e1f8b6
+		summarizeBy: none
+		sourceColumn: Top Genre
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Minutes Streamed Per Day'
+		dataType: int64
+		formatString: 0
+		lineageTag: fd599e85-8201-4150-b087-7e9cbb0797d6
+		summarizeBy: sum
+		sourceColumn: Minutes Streamed Per Day
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Number of Songs Liked'
+		dataType: int64
+		formatString: 0
+		lineageTag: ff027307-09c4-4212-8831-74f0df33641a
+		summarizeBy: sum
+		sourceColumn: Number of Songs Liked
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Most Played Artist'
+		dataType: string
+		lineageTag: 78addd57-b2b6-4f68-81b4-7c7704eeab8f
+		summarizeBy: none
+		sourceColumn: Most Played Artist
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Subscription Type'
+		dataType: string
+		lineageTag: 091dcb3c-80b7-46a3-9927-05fa34be0ddd
+		summarizeBy: none
+		sourceColumn: Subscription Type
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Listening Time (Morning/Afternoon/Night)'
+		dataType: string
+		lineageTag: 87dddae5-8c50-4aa4-8169-73e8ebdc206f
+		summarizeBy: none
+		sourceColumn: Listening Time (Morning/Afternoon/Night)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Discover Weekly Engagement (%)'
+		dataType: int64
+		formatString: 0
+		lineageTag: d04fe42e-1349-482a-bbee-71b5ad94ae50
+		summarizeBy: sum
+		sourceColumn: Discover Weekly Engagement (%)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Repeat Song Rate (%)'
+		dataType: int64
+		formatString: 0
+		lineageTag: 565a74b2-6ee6-4b2a-884d-a5e1a54278ac
+		summarizeBy: sum
+		sourceColumn: Repeat Song Rate (%)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Data 1' = ```
+			
+			VAR DiaAleatorio = RANDBETWEEN(1, 366) 
+			RETURN DATE(2024, 1, 1) + DiaAleatorio - 1
+			
+			```
+		formatString: General Date
+		lineageTag: 61328302-b98c-4888-8cf5-1e5dd1285242
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	column Anomes = FORMAT(fMain[Data 1], "YYYYMM")
+		lineageTag: df74c553-dfd0-47c6-8c33-044f0ec74220
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Data 2' = ```
+			
+			VAR DiaAleatorio = RANDBETWEEN(1, 366) 
+			RETURN DATE(2024, 1, 1) + DiaAleatorio - 1
+			
+			```
+		formatString: General Date
+		lineageTag: f06e32ff-55fe-4e78-8890-00860deceb94
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	partition fMain = m
+		mode: import
+		source =
+				let
+				    Fonte = Csv.Document(File.Contents("C:\Users\iebt 0427\Downloads\Global_Music_Streaming_Listener_Preferences.csv"),[Delimiter=",", Columns=12, Encoding=1252, QuoteStyle=QuoteStyle.None]),
+				    #"Cabeçalhos Promovidos" = Table.PromoteHeaders(Fonte, [PromoteAllScalars=true]),
+				    #"Tipo Alterado" = Table.TransformColumnTypes(#"Cabeçalhos Promovidos",{{"User_ID", type text}, {"Age", Int64.Type}, {"Country", type text}, {"Streaming Platform", type text}, {"Top Genre", type text}, {"Minutes Streamed Per Day", Int64.Type}, {"Number of Songs Liked", Int64.Type}, {"Most Played Artist", type text}, {"Subscription Type", type text}, {"Listening Time (Morning/Afternoon/Night)", type text}, {"Discover Weekly Engagement (%)", Int64.Type}, {"Repeat Song Rate (%)", Int64.Type}})
+				in
+				    #"Tipo Alterado"
+
+	changedProperty = Name
+
+	annotation PBI_ResultType = Table
+

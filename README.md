@@ -15,7 +15,7 @@
   - [🎨 Módulo 1: Temas no Power BI](#módulo-1-temas-no-power-bi)
   - [🖼️ Módulo 2: Construindo SVGs](#módulo-2-construindo-svgs)
   - [⚙️ Módulo 3: Avançando com Parâmetros](#módulo-3-avançando-com-parâmetros)
-  - [📊 Módulo 4: Conhecendo Grupos de Cálculo](#módulo-4-conhecendo-grupos-de-cálculo)
+  - [📊 Módulo 4: Explorando Grupos de Cálculo](#módulo-4-explorando-grupos-de-cálculo)
   - [🛠️ Módulo Bônus: Case de Engenharia de Dados](#módulo-bônus-case-de-engenharia-de-dados)
 
 ---
@@ -52,32 +52,66 @@ Antes de começar, é recomendável ter conhecimentos básicos sobre:
 ### Módulo 1: Temas no Power BI  
 🔹 Criação de **temas personalizados via JSON**.  
 🔹 Automatização de **design e cores** nos relatórios.  
-🔹 Estrutura dos arquivos de temas e boas práticas.  
+🔹 Estrutura dos arquivos de temas e boas práticas.
 
+#### Exemplo:
+```json
+{
+  "name": "CY23SU02",
+  "dataColors": [
+    "#118DFF", "#12239E", "#E66C37", "#6B007B", "#E645AB", "#1C2325"
+  ],
+  "foreground": "#131312",
+  "background": "#FFFFFF",
+  "foregroundNeutralSecondary": "#6C6966",
+  "backgroundLight": "#E5E0DA",
+  "foregroundNeutralTertiary": "#ABA7A2",
+  "backgroundNeutral": "#C6C2BE",
+  "tableAccent": "#118DFF",
+  "maximum": "#4A2D75",
+  "center": "#1AAB40",
+  "minimum": "#E645AB",
+  "bad": "#E66C37",
+  "neutral": "#6B007B",
+  "good": "#12239E"
+}
+```
 ---
 
-### Módulo 2: Construindo SVGs
+### Módulo 2: Construindo SVGs  
 🔹 Utilização de **SVGs em Power BI** para enriquecer visualizações.  
 🔹 Criando **ícones animados** dentro de relatórios.  
-🔹 Como aplicar **SVGs como backgrounds personalizados**.  
+🔹 Como aplicar **SVGs como backgrounds personalizados**.
+
+#### Exemplo:
+<img src="./Svgs/iebt_logo.svg" height="150">
 
 ---
 
-### Módulo 3: Avançando com Parâmetros
+### Módulo 3: Avançando com Parâmetros  
 🔹 Uso avançado de **parâmetros** para criar gráficos interativos.  
 🔹 Alternância dinâmica entre **métricas e dimensões**.  
 🔹 Casos de uso reais aplicados a dashboards.  
 
+#### Exemplo:
+<img src="./_Aux/Parametros1.png" height="200"><img src="./_Aux/Parametros2.png" height="200"><img src="./_Aux/Parametros3.png" height="200">
+
 ---
 
-### Módulo 4: Conhecendo Grupos de Cálculo
+### Módulo 4: Explorando Grupos de Cálculo  
 🔹 O que são **Grupos de Cálculo** e como utilizá-los.  
 🔹 Aplicação para **cálculos dinâmicos** e análises flexíveis.  
-🔹 Comparação com **tabelas calculadas e medidas**.  
+
+#### Exemplo:
+<img src="./_Aux/Grupo_Calculo1.png" height="200"><img src="./_Aux/Grupo_Calculo2.png" height="200"><img src="./_Aux/Grupo_Calculo3.png" height="200">
 
 ---
 
 ### Módulo Bônus: Case de Engenharia de Dados
+🔹 Apresentação da **Arquitetura de ETL** desenvolvida no cliente.
 🔹 **Introdução ao Apache Airflow** e sua importância.  
 🔹 Como **orquestrar pipelines de dados** de forma eficiente.  
-🔹 Integração entre **Power BI e Engenharia de Dados**.  
+🔹 Integração entre **Airflow e Spark**.  
+
+#### Exemplo:
+<img src="./_Aux/Airflow.png" height="300"><img src="./_Aux/Airflow2.png" height="300">

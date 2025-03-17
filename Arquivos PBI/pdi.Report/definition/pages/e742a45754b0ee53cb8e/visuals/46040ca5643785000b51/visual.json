@@ -1,0 +1,75 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/1.5.0/schema.json",
+  "name": "46040ca5643785000b51",
+  "position": {
+    "x": 335.7069999770066,
+    "y": 519.75984908945793,
+    "z": 4000,
+    "height": 163.11688311688312,
+    "width": 443.63636363636363,
+    "tabOrder": 5000
+  },
+  "visual": {
+    "visualType": "columnChart",
+    "query": {
+      "queryState": {
+        "Category": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "fMain"
+                    }
+                  },
+                  "Property": "Top Genre"
+                }
+              },
+              "queryRef": "Global_Music_Streaming_Listener_Preferences.Top Genre",
+              "nativeQueryRef": "Top Genre",
+              "active": true
+            }
+          ]
+        },
+        "Y": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Medidas"
+                    }
+                  },
+                  "Property": "Kpi 3"
+                }
+              },
+              "queryRef": "Medidas.Kpi 3",
+              "nativeQueryRef": "Kpi 3"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "Medidas"
+                  }
+                },
+                "Property": "Kpi 3"
+              }
+            },
+            "direction": "Descending"
+          }
+        ],
+        "isDefaultSort": true
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

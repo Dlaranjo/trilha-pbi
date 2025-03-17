@@ -1,0 +1,98 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/1.5.0/schema.json",
+  "name": "20e45b8334ec485ed3a4",
+  "position": {
+    "x": 322.74163201163867,
+    "y": 90.279329608938554,
+    "z": 3000,
+    "height": 96.666666666666671,
+    "width": 930,
+    "tabOrder": 2000
+  },
+  "visual": {
+    "visualType": "cardVisual",
+    "query": {
+      "queryState": {
+        "Data": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Medidas"
+                    }
+                  },
+                  "Property": "Kpi 0"
+                }
+              },
+              "queryRef": "Medidas.Kpi 0",
+              "nativeQueryRef": "Kpi 0"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Medidas"
+                    }
+                  },
+                  "Property": "Kpi 1"
+                }
+              },
+              "queryRef": "Medidas.Kpi 1",
+              "nativeQueryRef": "Kpi 1"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Medidas"
+                    }
+                  },
+                  "Property": "Kpi 2"
+                }
+              },
+              "queryRef": "Medidas.Kpi 2",
+              "nativeQueryRef": "Kpi 2"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Medidas"
+                    }
+                  },
+                  "Property": "Kpi 3"
+                }
+              },
+              "queryRef": "Medidas.Kpi 3",
+              "nativeQueryRef": "Kpi 3"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "Medidas"
+                  }
+                },
+                "Property": "Kpi 0"
+              }
+            },
+            "direction": "Descending"
+          }
+        ],
+        "isDefaultSort": true
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

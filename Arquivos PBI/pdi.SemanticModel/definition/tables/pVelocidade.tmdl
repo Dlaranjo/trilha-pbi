@@ -1,0 +1,22 @@
+table pVelocidade
+	lineageTag: 1942cb4a-34d0-4464-8641-a214f15a7452
+
+	column Parâmetro
+		formatString: 0
+		lineageTag: 43935098-28cc-4de6-a11f-8bac3b5df805
+		summarizeBy: none
+		sourceColumn: [Value]
+
+		extendedProperty ParameterMetadata =
+				{
+				  "version": 0
+				}
+
+		annotation SummarizationSetBy = User
+
+	partition pVelocidade = calculated
+		mode: import
+		source = GENERATESERIES(1, 9, 1)
+
+	annotation PBI_Id = 12055ef735e3416bace8a8038c20c0e8
+

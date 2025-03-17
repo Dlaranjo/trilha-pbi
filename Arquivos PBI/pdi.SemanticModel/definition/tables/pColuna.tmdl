@@ -1,0 +1,57 @@
+table pColuna
+	lineageTag: d1fbba1c-3513-4cf7-944d-a1d287f2406c
+
+	column pColuna
+		lineageTag: 67b5d81e-ec68-47ff-9f0e-3bbdf4ef9376
+		summarizeBy: none
+		sourceColumn: [Value1]
+		sortByColumn: 'pColuna Pedido'
+
+		relatedColumnDetails
+			groupByColumn: 'pColuna Campos'
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'pColuna Campos'
+		isHidden
+		lineageTag: eb995b7e-04c1-4636-b664-d6f80589ea7c
+		summarizeBy: none
+		sourceColumn: [Value2]
+		sortByColumn: 'pColuna Pedido'
+
+		extendedProperty ParameterMetadata =
+				{
+				  "version": 3,
+				  "kind": 2
+				}
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'pColuna Pedido'
+		isHidden
+		formatString: 0
+		lineageTag: 849f5bf2-07b6-459d-92a3-c769be40f2ec
+		summarizeBy: sum
+		sourceColumn: [Value3]
+
+		annotation SummarizationSetBy = Automatic
+
+	column Value4
+		lineageTag: fc2ba6ba-6f06-4e98-8eb1-3cf51597faca
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Value4]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition pColuna = calculated
+		mode: import
+		source =
+				{
+				    ("Kpi 0", NAMEOF('Medidas'[Kpi 0]), 0, "g1"),
+				    ("Kpi 1", NAMEOF('Medidas'[Kpi 1]), 1, "g2"),
+				    ("Kpi 2", NAMEOF('Medidas'[Kpi 2]), 2, "g2")
+				}
+
+	annotation PBI_Id = d148edb09833464b8674dbde494be211
+

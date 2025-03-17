@@ -1,0 +1,30 @@
+model Model
+	culture: pt-BR
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	discourageImplicitMeasures
+	sourceQueryCulture: pt-BR
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation __PBI_TimeIntelligenceEnabled = 0
+
+annotation PBIDesktopVersion = 2.140.1476.0 (25.02)+e8c6a85d1d09735c5c055c3244a60ff4076cd2cf
+
+annotation PBI_QueryOrder = ["fMain","Medidas","dCalendario","dAnim"]
+
+annotation PBI_ProTooling = ["TMDLView_Desktop","CalcGroup","DevMode"]
+
+ref table fMain
+ref table Medidas
+ref table dCalendario
+ref table pVelocidade
+ref table dAnim
+ref table pEixo
+ref table pColuna
+ref table pLinha
+ref table dGraficos
+ref table 'Grupo de cálculo'
+
+ref cultureInfo pt-BR
+
