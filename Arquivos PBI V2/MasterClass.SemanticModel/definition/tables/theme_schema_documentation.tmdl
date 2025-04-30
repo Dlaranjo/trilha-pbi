@@ -1,0 +1,59 @@
+table theme_schema_documentation
+	lineageTag: 06b975ac-2963-44b0-8de1-a86cde17e7bc
+
+	column Visual
+		dataType: string
+		lineageTag: 5910a126-9c56-4aa2-a95a-1437eead4328
+		summarizeBy: none
+		sourceColumn: Visual
+
+		annotation SummarizationSetBy = Automatic
+
+	column Categoria
+		dataType: string
+		lineageTag: b1516f99-13e2-4733-b7d0-739749a221ad
+		summarizeBy: none
+		sourceColumn: Categoria
+
+		annotation SummarizationSetBy = Automatic
+
+	column Propriedade
+		dataType: string
+		lineageTag: e3bdca65-c9e5-4629-af79-2a5e832ec98f
+		summarizeBy: none
+		sourceColumn: Propriedade
+
+		annotation SummarizationSetBy = Automatic
+
+	column Descrição
+		dataType: string
+		lineageTag: 69ea139b-c534-45b9-808e-27a78b1f1752
+		summarizeBy: none
+		sourceColumn: Descrição
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Valor Esperado'
+		dataType: string
+		lineageTag: 934b7a34-fe20-48b1-a025-5f2e2ac69576
+		summarizeBy: none
+		sourceColumn: Valor Esperado
+
+		annotation SummarizationSetBy = Automatic
+
+	partition theme_schema_documentation = m
+		mode: import
+		source =
+				let
+				    Fonte = Csv.Document(File.Contents("C:\Users\iebt\Desktop\Github\trilha-pbi\Temas_Json\theme_schema_documentation.csv"),[Delimiter=",", Columns=5, Encoding=1252, QuoteStyle=QuoteStyle.None]),
+				    #"Tipo Alterado" = Table.TransformColumnTypes(Fonte,{{"Column1", type text}, {"Column2", type text}, {"Column3", type text}, {"Column4", type text}, {"Column5", type text}}),
+				    #"Cabeçalhos Promovidos" = Table.PromoteHeaders(#"Tipo Alterado", [PromoteAllScalars=true]),
+				    #"Tipo Alterado1" = Table.TransformColumnTypes(#"Cabeçalhos Promovidos",{{"visual_name", type text}, {"property_category", type text}, {"property_name", type text}, {"property_description", type text}, {"property_values", type text}}),
+				    #"Colunas Renomeadas" = Table.RenameColumns(#"Tipo Alterado1",{{"property_category", "Categoria"}, {"property_description", "Descrição"}, {"property_name", "Propriedade"}, {"property_values", "Valor Esperado"}, {"visual_name", "Visual"}})
+				in
+				    #"Colunas Renomeadas"
+
+	annotation PBI_NavigationStepName = Navegação
+
+	annotation PBI_ResultType = Table
+

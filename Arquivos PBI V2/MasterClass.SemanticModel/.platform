@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "MasterClass"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "bff2a70a-d4aa-4fc5-9072-a20a973fda4a"
+  }
+}

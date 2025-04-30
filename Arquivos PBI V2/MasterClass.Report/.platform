@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "MasterClass"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "75c023e4-30c4-4484-ab18-e60e6022694f"
+  }
+}

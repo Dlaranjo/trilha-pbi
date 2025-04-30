@@ -1,0 +1,224 @@
+﻿{
+    "name": "MasterClass Theme",
+    "$schema": "https://github.com/microsoft/powerbi-desktop-samples/blob/main/Report%20Theme%20JSON%20Schema/reportThemeSchema-2.141.json",
+    "dataColors": [
+        "#9600C8",
+        "#CF4AFD",
+        "#E496FE",
+        "#EBCAF7",
+        "#F1DEF7",
+        "#FCF8FE",
+        "#701191"
+    ],
+    "foreground": "#6C2484",
+    "background": "#FFFFFF",
+    "foregroundNeutralSecondary": "#6C2484",
+    "backgroundLight": "#FCF8FE",
+    "foregroundNeutralTertiary": "#701191",
+    "backgroundNeutral": "#F1DEF7",
+    "tableAccent": "#9600C8",
+    "maximum": "#9600C8",
+    "center": "#CF4AFD",
+    "minimum": "#E496FE",
+    "bad": "#E66C37",
+    "neutral": "#701191",
+    "good": "#12239E",
+    "textClasses": {
+        "title": {
+            "fontFace": "DIN",
+            "fontSize": 12,
+            "fontWeight": "bold",
+            "color": "#6C2484"
+        },
+        "label": {
+            "fontFace": "DIN",
+            "fontSize": 10,
+            "fontWeight": "normal",
+            "color": "#6C2484"
+        }
+    },
+    "visualStyles": {
+        "*": {
+            "*": {
+                "border": [{
+                    "show": true,
+                    "color": {
+                        "solid": {
+                            "color": "#F1DEF7"
+                        }
+                    },
+                    "transparency": 0,
+                    "weight": 1,
+                    "radius": 5
+                }],
+                "background": [{
+                    "show": true,
+                    "color": {
+                        "solid": {
+                            "color": "#FFFFFF"
+                        }
+                    }
+                }]
+            }
+        },
+        "slicer": {
+            "*": {
+                "*": [{
+                    "mode": "Dropdown"
+                }],
+                "border": [{
+                    "show": false
+                }],
+                "header": [{
+                    "fontColor": {
+                        "solid": {
+                            "color": "#6C2484"
+                        }
+                    },
+                    "textSize": 10
+                }],
+                "items": [{
+                    "fontColor": {
+                        "solid": {
+                            "color": "#701191"
+                        }
+                    },
+                    "textSize": 9
+                }]
+            }
+        },
+        "cardVisual": {
+            "*": {
+                "*": [{
+                    "$id": "default",
+                    "rectangleRoundedCurve": 5, 
+                    "tileShape": "rectangleRounded"
+                }],
+                "layout": [{
+                    "maxTiles": 4
+                }],
+                "border": [{
+                    "show": false
+                }],
+                "background": [{
+                    "show": false
+                }],
+                "spacing": [{
+                    "$id": "default",
+                    "verticalSpacing": 0
+                }],
+                "outline": [{
+                    "$id": "default",
+                    "lineColor": {
+                        "solid": {
+                            "color": "#F1DEF7"
+                        }
+                    }
+                }],
+                "value": [{
+                    "$id": "default",
+                    "fontColor": {
+                        "solid": {
+                            "color": "#701191"
+                        }
+                    },
+                    "fontSize": 25,
+                    "fontFamily": "Calibri"
+                }],
+                "label": [{
+                    "$id": "default",
+                    "fontSize": 10
+                }],
+                "padding": [{
+                    "top":0,
+                    "bottom":0,
+                    "left": 0,
+                    "right":0
+                }]
+            }
+        },
+        "tableEx": {
+            "*": {
+                "columnHeaders": [{
+                    "fontColor": {
+                        "solid": {
+                            "color": "#701191"
+                        }
+                    },
+                    "fontSize": 11,
+                    "fontFamily": "wf_standard-font, helvetica, arial, sans-serif"
+                }],
+                "values": [{
+                    "fontColorPrimary": {
+                        "solid": {
+                            "color": "#701191"
+                        }
+                    },
+                    "fontColorSecondary": {
+                        "solid": {
+                            "color": "#6C2484"
+                        }
+                    },
+                    "backColorSecondary": {
+                        "solid": {
+                            "color": "#FCF8FE"
+                        }
+                    },
+                    "fontSize": 10,
+                    "fontFamily": "wf_standard-font, helvetica, arial, sans-serif"
+                }],
+                "grid": [{
+                    "gridHorizontal": true,
+                    "gridHorizontalColor": {
+                        "solid": {
+                            "color": "#F7F7F7"
+                        }
+                    },
+                    "outlineColor": {
+                        "solid": {
+                            "color": "#CF4AFD"
+                        }
+                    }
+                }]
+            }
+        },
+        "lineChart": {
+            "*": {
+                "*": [{
+                    "showAxisTitle": false
+                }],
+                "dataPoint": [{
+                    "fill": {
+                        "solid": {
+                            "color": "#9600C8"
+                        }
+                    }
+                }],
+                "labels": [{
+                    "show": true,
+                    "color": {
+                        "solid": {
+                            "color": "#701191"
+                        }
+                    }
+                }],
+                "valueAxis": [{
+                    "show": false
+                }],
+                "padding": [{
+                    "top":5
+                }]
+            }
+        },
+        "donutChart": {
+            "*": {
+                "legend": [{
+                    "show": false
+                }],
+                "padding": [{
+                    "top":5
+                }]
+            }
+        }
+    }
+}
