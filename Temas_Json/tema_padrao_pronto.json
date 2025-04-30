@@ -23,6 +23,20 @@
     "bad": "#E66C37",
     "neutral": "#6B007B",
     "good": "#12239E",
+    "textClasses": {
+        "title": {
+            "fontFace": "DIN",
+            "fontSize": 12,
+            "fontWeight": "bold",
+            "color": "#6C2484"
+        },
+        "label": {
+            "fontFace": "DIN",
+            "fontSize": 10,
+            "fontWeight": "normal",
+            "color": "#6C2484"
+        }
+    },
     "visualStyles": {
         "*": {
             "*":{
