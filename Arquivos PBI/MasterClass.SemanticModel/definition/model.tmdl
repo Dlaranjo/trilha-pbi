@@ -6,11 +6,11 @@ model Model
 		legacyRedirects
 		returnErrorValuesAsNull
 
-annotation PBI_QueryOrder = ["financials","theme_schema_documentation"]
+annotation PBI_QueryOrder = ["financials","theme_schema_documentation","Medidas"]
 
 annotation __PBI_TimeIntelligenceEnabled = 1
 
-annotation PBIDesktopVersion = 2.142.928.0 (25.04)+de52df9f0bb74ad93a80d89c52d63fe6d07e0e1b
+annotation PBIDesktopVersion = 2.142.1277.0 (25.04)+014fde450f93691fc9537f0758d73d1c5df153ef
 
 annotation PBI_ProTooling = ["DevMode"]
 
@@ -18,6 +18,7 @@ ref table financials
 ref table DateTableTemplate_fcfe31ea-ea99-4868-91bf-152943cceda3
 ref table LocalDateTable_01239e5f-577c-40ab-89b1-77717fc29ac7
 ref table theme_schema_documentation
+ref table Medidas
 
 ref cultureInfo pt-BR
 

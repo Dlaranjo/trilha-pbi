@@ -7,9 +7,9 @@
       "type": "SharedResources"
     },
     "customTheme": {
-      "name": "AccessibleDefault",
+      "name": "MasterClass_Theme12289756115607187.json",
       "reportVersionAtImport": "5.63",
-      "type": "SharedResources"
+      "type": "RegisteredResources"
     }
   },
   "layoutOptimization": "None",
@@ -60,6 +60,11 @@
           "name": "Background_(6)6611256591659855.svg",
           "path": "Background_(6)6611256591659855.svg",
           "type": "Image"
+        },
+        {
+          "name": "MasterClass_Theme12289756115607187.json",
+          "path": "MasterClass_Theme12289756115607187.json",
+          "type": "CustomTheme"
         }
       ]
     },
@@ -71,11 +76,6 @@
           "name": "CY24SU10",
           "path": "BaseThemes/CY24SU10.json",
           "type": "BaseTheme"
-        },
-        {
-          "name": "AccessibleDefault",
-          "path": "BuiltInThemes/AccessibleDefault.json",
-          "type": "CustomTheme"
         }
       ]
     }

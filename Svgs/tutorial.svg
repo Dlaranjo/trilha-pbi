@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="220" viewBox="0 0 400 220" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="400" height="220" fill="#fff" />
+  <!-- Retângulo -->
+  <!-- <rect x="20" y="20" width="60" height="40" fill="#4a90e2" stroke="#222" stroke-width="2" /> -->
+
+  <!-- Círculo -->
+  <!-- <circle cx="130" cy="40" r="20" fill="#50e3c2" stroke="#222" stroke-width="2" /> -->
+
+  <!-- Linha -->
+  <!-- <line x1="180" y1="20" x2="240" y2="60" stroke="#e94e77" stroke-width="3" /> -->
+
+  <!-- Texto -->
+  <!-- <text x="260" y="50" font-size="18" font-family="Arial" fill="#f5a623">texto</text> -->
+
+  <!-- Caminho (Path) -->
+  <!-- <path d="M40,120 Q80,180 160,120 T280,120" fill="none" stroke="#7ed957" stroke-width="3" /> -->
+</svg>
