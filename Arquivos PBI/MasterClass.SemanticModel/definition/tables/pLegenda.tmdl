@@ -1,0 +1,58 @@
+table pLegenda
+	lineageTag: 5e3533e5-79a5-4dd3-a6c0-4c7400b1b6fb
+
+	column pLegenda
+		lineageTag: efcce1a5-89c9-43b0-b722-ee55a1b0026d
+		summarizeBy: none
+		sourceColumn: [Value1]
+		sortByColumn: 'pLegenda Pedido'
+
+		relatedColumnDetails
+			groupByColumn: 'pLegenda Campos'
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'pLegenda Campos'
+		isHidden
+		lineageTag: 34eb7f20-9e3d-4487-a2eb-76e10487da9b
+		summarizeBy: none
+		sourceColumn: [Value2]
+		sortByColumn: 'pLegenda Pedido'
+
+		extendedProperty ParameterMetadata =
+				{
+				  "version": 3,
+				  "kind": 2
+				}
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'pLegenda Pedido'
+		isHidden
+		formatString: 0
+		lineageTag: 5bb60cc8-385a-432d-9b6b-f9e8b2c4ebe6
+		summarizeBy: sum
+		sourceColumn: [Value3]
+
+		annotation SummarizationSetBy = Automatic
+
+	column Value4
+		formatString: 0
+		lineageTag: 70d4620d-c842-40e7-a1a9-7c35387a6bfa
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: [Value4]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition pLegenda = calculated
+		mode: import
+		source =
+				{
+				    ("Country", NAMEOF('financials'[Country]), 0, 2),
+				    ("Product", NAMEOF('financials'[Product]), 1, 1),
+				    ("Segment", NAMEOF('financials'[Segment]), 2, 0)
+				}
+
+	annotation PBI_Id = c55d3aa2e4664a0e9890526a7dc9e672
+

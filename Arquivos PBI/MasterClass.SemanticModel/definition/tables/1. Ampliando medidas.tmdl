@@ -1,0 +1,47 @@
+table '1. Ampliando medidas'
+	lineageTag: df58a099-14a7-4df7-8557-9b8bb407e281
+
+	calculationGroup
+		precedence: 2
+
+		calculationItem 'Mes Anterior' =
+				
+				CALCULATE(
+				    SELECTEDMEASURE(),
+				    DATEADD(financials[Date], -1, MONTH)
+				)
+
+		calculationItem 'Periodo Atual' = SELECTEDMEASURE()
+
+		calculationItem Projetado = SELECTEDMEASURE() * 1.4
+
+	column 'Coluna do grupo de cálculo'
+		dataType: string
+		lineageTag: b26fef7d-978d-4fc5-85cf-601bec4fb09a
+		summarizeBy: none
+		sourceColumn: Name
+		sortByColumn: Ordinal
+
+		annotation SummarizationSetBy = Automatic
+
+	column Ordinal
+		dataType: int64
+		formatString: 0
+		lineageTag: 9e242932-7ad4-445a-8319-fd937efee69b
+		summarizeBy: sum
+		sourceColumn: Ordinal
+
+		annotation SummarizationSetBy = Automatic
+
+	column Categoria =
+			
+			SWITCH(
+			    TRUE(),
+			    '1. Ampliando medidas'[Ordinal] <= 1, "Categoria 1",
+			    "Categoria 2"
+			)
+		lineageTag: 1ae5b2e1-9801-4287-be99-7bdcb6e03f8e
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+

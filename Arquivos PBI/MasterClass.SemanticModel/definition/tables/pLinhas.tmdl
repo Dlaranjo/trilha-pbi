@@ -1,0 +1,57 @@
+table pLinhas
+	lineageTag: 39d579df-1e64-4337-a7f5-8847532446e3
+
+	column pLinhas
+		lineageTag: a53e7542-e8d8-4c31-b5ba-37b8ae62db46
+		summarizeBy: none
+		sourceColumn: [Value1]
+		sortByColumn: 'pLinhas Pedido'
+
+		relatedColumnDetails
+			groupByColumn: 'pLinhas Campos'
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'pLinhas Campos'
+		isHidden
+		lineageTag: 8b3a73e1-115d-42c0-879a-67749f785137
+		summarizeBy: none
+		sourceColumn: [Value2]
+		sortByColumn: 'pLinhas Pedido'
+
+		extendedProperty ParameterMetadata =
+				{
+				  "version": 3,
+				  "kind": 2
+				}
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'pLinhas Pedido'
+		isHidden
+		formatString: 0
+		lineageTag: eb9e5788-b86c-4507-88cb-55a5a31a2725
+		summarizeBy: sum
+		sourceColumn: [Value3]
+
+		annotation SummarizationSetBy = Automatic
+
+	column Value4
+		formatString: 0
+		lineageTag: 18a6d0e3-4493-4d4a-953a-f4fbaa11f64e
+		summarizeBy: sum
+		sourceColumn: [Value4]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition pLinhas = calculated
+		mode: import
+		source =
+				{
+				    ("Lucro", NAMEOF('Medidas'[Lucro]), 0, 1),
+				    ("Vendas", NAMEOF('Medidas'[Vendas]), 1, 0),
+				    ("Unidades Vendidas", NAMEOF('Medidas'[Unidades Vendidas]), 2, 0)
+				}
+
+	annotation PBI_Id = 4096c8cf3e004b9aac58fe45047ce5db
+

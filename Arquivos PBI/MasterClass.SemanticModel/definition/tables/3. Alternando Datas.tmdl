@@ -1,0 +1,33 @@
+table '3. Alternando Datas'
+	lineageTag: 8752691f-9f2a-4aeb-a84a-17fd720b08ba
+
+	calculationGroup
+		precedence: 3
+
+		calculationItem 'Data Normal' = SELECTEDMEASURE()
+
+		calculationItem 'Data Alternativa' =
+				
+				CALCULATE(
+				    SELECTEDMEASURE(),
+				    USERELATIONSHIP(dCalendario[Date], financials[Alternative Date])
+				)
+
+	column 'Coluna do grupo de cálculo'
+		dataType: string
+		lineageTag: 6b98ee02-f09f-468d-afaf-494be677dc28
+		summarizeBy: none
+		sourceColumn: Name
+		sortByColumn: Ordinal
+
+		annotation SummarizationSetBy = Automatic
+
+	column Ordinal
+		dataType: int64
+		formatString: 0
+		lineageTag: 6d127969-fb27-4ca7-a627-ae465e445da7
+		summarizeBy: sum
+		sourceColumn: Ordinal
+
+		annotation SummarizationSetBy = Automatic
+

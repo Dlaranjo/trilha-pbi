@@ -17,55 +17,18 @@
           "projections": [
             {
               "field": {
-                "HierarchyLevel": {
+                "Column": {
                   "Expression": {
-                    "Hierarchy": {
-                      "Expression": {
-                        "PropertyVariationSource": {
-                          "Expression": {
-                            "SourceRef": {
-                              "Entity": "financials"
-                            }
-                          },
-                          "Name": "Variation",
-                          "Property": "Date"
-                        }
-                      },
-                      "Hierarchy": "Hierarquia de datas"
+                    "SourceRef": {
+                      "Entity": "financials"
                     }
                   },
-                  "Level": "Mês"
+                  "Property": "Date"
                 }
               },
               "queryRef": "financials.Date.Variation.Hierarquia de datas.Mês",
               "nativeQueryRef": "Date Mês",
               "active": true
-            },
-            {
-              "field": {
-                "HierarchyLevel": {
-                  "Expression": {
-                    "Hierarchy": {
-                      "Expression": {
-                        "PropertyVariationSource": {
-                          "Expression": {
-                            "SourceRef": {
-                              "Entity": "financials"
-                            }
-                          },
-                          "Name": "Variation",
-                          "Property": "Date"
-                        }
-                      },
-                      "Hierarchy": "Hierarquia de datas"
-                    }
-                  },
-                  "Level": "Dia"
-                }
-              },
-              "queryRef": "financials.Date.Variation.Hierarquia de datas.Dia",
-              "nativeQueryRef": "Date Dia",
-              "active": false
             }
           ]
         },

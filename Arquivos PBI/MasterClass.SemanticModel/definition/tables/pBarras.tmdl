@@ -1,0 +1,58 @@
+table pBarras
+	lineageTag: 7f1196c4-eef1-49f4-8040-5db2af4ac9ff
+
+	column pBarras
+		lineageTag: cc09c78f-17e2-415f-bdb2-ac9f7cb38609
+		summarizeBy: none
+		sourceColumn: [Value1]
+		sortByColumn: 'pMedidas Pedido'
+
+		relatedColumnDetails
+			groupByColumn: 'pMedidas Campos'
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'pMedidas Campos'
+		isHidden
+		lineageTag: 34a9ebab-f248-4469-8f63-49dde1e1b8d2
+		summarizeBy: none
+		sourceColumn: [Value2]
+		sortByColumn: 'pMedidas Pedido'
+
+		extendedProperty ParameterMetadata =
+				{
+				  "version": 3,
+				  "kind": 2
+				}
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'pMedidas Pedido'
+		isHidden
+		formatString: 0
+		lineageTag: 3654b236-32bf-4255-8a94-37231bb23df0
+		summarizeBy: sum
+		sourceColumn: [Value3]
+
+		annotation SummarizationSetBy = Automatic
+
+	column Value4
+		formatString: 0
+		lineageTag: 02f7db2c-4044-4c64-b9ee-d77e1f0a3ee1
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: [Value4]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition pBarras = calculated
+		mode: import
+		source =
+				{
+				    ("Vendas", NAMEOF('Medidas'[Vendas]), 0, 1),
+				    ("Unidades Vendidas", NAMEOF('Medidas'[Unidades Vendidas]), 1, 0),
+				    ("Lucro", NAMEOF('Medidas'[Lucro]), 2, 2)
+				}
+
+	annotation PBI_Id = 89537baa861d4483be905e46536294ed
+

@@ -61,6 +61,29 @@ table Medidas
 		lineageTag: f87528aa-f4ef-4fa9-807a-1934d037c28b
 		dataCategory: ImageUrl
 
+	measure Vendas = SUM(financials[Sales])
+		displayFolder: Parametros
+		lineageTag: 7a2501c2-a7ab-4624-ac23-07c52ca818a3
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure Lucro = SUM(financials[Profit])
+		displayFolder: Parametros
+		lineageTag: 49479118-f212-4ce7-9864-bb50b4a216ad
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Unidades Vendidas' = SUM(financials[Units Sold])
+		displayFolder: Parametros
+		lineageTag: b42835e6-a511-451b-9e6d-74c220d67e10
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure placeholder = BLANK()
+		lineageTag: e81df1d1-489c-463e-adf3-591f26a77017
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
 	partition Medidas = m
 		mode: import
 		source =

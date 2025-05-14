@@ -1,0 +1,57 @@
+table pLinhas_Gabarito
+	lineageTag: 022db864-8008-4105-b82f-22538b5f1b28
+
+	column pLinhas_Gabarito
+		lineageTag: 4cd8e224-d3e8-4102-8159-d6ac2b3234ea
+		summarizeBy: none
+		sourceColumn: [Value1]
+		sortByColumn: 'pLinhas_Gabarito Pedido'
+
+		relatedColumnDetails
+			groupByColumn: 'pLinhas_Gabarito Campos'
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'pLinhas_Gabarito Campos'
+		isHidden
+		lineageTag: 1b62434d-05c4-4edd-bac5-b5becca063f0
+		summarizeBy: none
+		sourceColumn: [Value2]
+		sortByColumn: 'pLinhas_Gabarito Pedido'
+
+		extendedProperty ParameterMetadata =
+				{
+				  "version": 3,
+				  "kind": 2
+				}
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'pLinhas_Gabarito Pedido'
+		isHidden
+		formatString: 0
+		lineageTag: 14a9ada8-7b1e-4a08-9234-8dfeba150b19
+		summarizeBy: sum
+		sourceColumn: [Value3]
+
+		annotation SummarizationSetBy = Automatic
+
+	column Id
+		formatString: 0
+		lineageTag: 1906b995-c4fb-4d1e-9f10-5ea01753216e
+		summarizeBy: none
+		sourceColumn: [Value4]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition pLinhas_Gabarito = calculated
+		mode: import
+		source =
+				{
+				    ("Lucro", NAMEOF('Medidas'[Lucro]), 0, 4),
+				    ("Unidades Vendidas", NAMEOF('Medidas'[Unidades Vendidas]), 1, 0),
+				    ("Vendas", NAMEOF('Medidas'[Vendas]), 2, 0)
+				}
+
+	annotation PBI_Id = 3421462948454ad792dadd990cdab7ca
+

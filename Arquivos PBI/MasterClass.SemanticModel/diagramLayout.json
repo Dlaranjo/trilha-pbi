@@ -4,7 +4,7 @@
     {
       "ordinal": 0,
       "scrollPosition": {
-        "x": 0,
+        "x": 4029,
         "y": 0
       },
       "nodes": [
@@ -43,6 +43,167 @@
           "nodeLineageTag": "cb2e7d10-99c9-490c-aaa7-5ea2ddd65c2a",
           "size": {
             "height": 104,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1420,
+            "y": 74
+          },
+          "nodeIndex": "pBarras",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1704,
+            "y": 74
+          },
+          "nodeIndex": "pLinhas",
+          "nodeLineageTag": "39d579df-1e64-4337-a7f5-8847532446e3",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1988,
+            "y": 74
+          },
+          "nodeIndex": "pEixo",
+          "nodeLineageTag": "d3489865-0d75-42d8-a07a-635b9742121f",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 2272,
+            "y": 74
+          },
+          "nodeIndex": "pLegenda",
+          "nodeLineageTag": "5e3533e5-79a5-4dd3-a6c0-4c7400b1b6fb",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 2556,
+            "y": 50
+          },
+          "nodeIndex": "aGraficos",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 3408,
+            "y": 50
+          },
+          "nodeIndex": "dCalendario",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 3692,
+            "y": 86
+          },
+          "nodeIndex": "3. Alternando Datas",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 3976,
+            "y": 86
+          },
+          "nodeIndex": "2. Criando tabelas",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 3124,
+            "y": 86
+          },
+          "nodeIndex": "1. Ampliando medidas",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 4544,
+            "y": 74
+          },
+          "nodeIndex": "pLinhas_Gabarito",
+          "nodeLineageTag": "022db864-8008-4105-b82f-22538b5f1b28",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 4260,
+            "y": 74
+          },
+          "nodeIndex": "pBarras_Gabarito",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 4828,
+            "y": 74
+          },
+          "nodeIndex": "pEixo_Gabarito",
+          "nodeLineageTag": "099dc767-19c8-4bc3-b85c-a08a1a0b9963",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 5112,
+            "y": 86
+          },
+          "nodeIndex": "Gabarito",
+          "size": {
+            "height": 128,
             "width": 234
           },
           "zIndex": 0

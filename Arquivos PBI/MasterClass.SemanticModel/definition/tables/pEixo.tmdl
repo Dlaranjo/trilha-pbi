@@ -1,0 +1,58 @@
+table pEixo
+	lineageTag: d3489865-0d75-42d8-a07a-635b9742121f
+
+	column pEixo
+		lineageTag: 059ef5fb-cc65-4f86-ab35-7d80ba513c51
+		summarizeBy: none
+		sourceColumn: [Value1]
+		sortByColumn: 'pEixo Pedido'
+
+		relatedColumnDetails
+			groupByColumn: 'pEixo Campos'
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'pEixo Campos'
+		isHidden
+		lineageTag: 222efd11-39d6-44ec-9169-d24e3b302e69
+		summarizeBy: none
+		sourceColumn: [Value2]
+		sortByColumn: 'pEixo Pedido'
+
+		extendedProperty ParameterMetadata =
+				{
+				  "version": 3,
+				  "kind": 2
+				}
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'pEixo Pedido'
+		isHidden
+		formatString: 0
+		lineageTag: acfd9c14-c50a-48db-a2d3-21b89a49a2f1
+		summarizeBy: sum
+		sourceColumn: [Value3]
+
+		annotation SummarizationSetBy = Automatic
+
+	column Value4
+		formatString: 0
+		lineageTag: fbf239de-c1c1-4a6a-87e0-f3d6b6db4595
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: [Value4]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition pEixo = calculated
+		mode: import
+		source =
+				{
+				    ("Country", NAMEOF('financials'[Country]), 0, 1),
+				    ("Product", NAMEOF('financials'[Product]), 1, 2),
+				    ("Segment", NAMEOF('financials'[Segment]), 2, 2)
+				}
+
+	annotation PBI_Id = c39014a1dd5d42ab8bc6983abb0db2bf
+

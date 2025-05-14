@@ -1,0 +1,46 @@
+table aGraficos
+	lineageTag: f2d4a715-4fd9-42c4-8c0e-862e9448b66e
+
+	column Tag
+		lineageTag: 715dfeac-b6da-49bd-8869-48211d4de63e
+		summarizeBy: none
+		sourceColumn: [Value1]
+
+		annotation SummarizationSetBy = Automatic
+
+	column Titulo
+		lineageTag: 033fb271-99b1-4239-b394-4c719c0d10a0
+		summarizeBy: none
+		sourceColumn: [Value2]
+
+		annotation SummarizationSetBy = Automatic
+
+	column id
+		formatString: 0
+		lineageTag: 9c61c06c-5a37-4cb6-8e92-80a833143a2c
+		summarizeBy: none
+		sourceColumn: [Value3]
+
+		annotation SummarizationSetBy = Automatic
+
+	column Value4
+		lineageTag: 2eb8b2b3-5791-4c42-81c1-13b96925a206
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Value4]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition aGraficos = calculated
+		mode: import
+		source = ```
+				{
+				    ("Vendas", "Gráfico de Vendas", 1, "Aula"),
+				    ("Lucro", "Gráfico de Lucro", 2, "Aula"),
+				    ("Vendas", "Vendas por Produto", 3, "Gabarito"),
+				    ("Lucro", "Lucro por País", 4, "Gabarito")
+				} 
+				```
+
+	annotation PBI_Id = 2bb44b69984542039d5cc3ddc1a68c34
+
