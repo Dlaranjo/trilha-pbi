@@ -4,11 +4,11 @@ table '2. Criando tabelas'
 	calculationGroup
 		precedence: 4
 
-		calculationItem Lucro = FORMAT([Lucro], "#,0")
+		calculationItem 'Unidades Vendidas' = FORMAT([Unidades Vendidas], "#,0")
 
 		calculationItem Vendas = FORMAT([Vendas], "#,0")
 
-		calculationItem 'Unidades Vendidas' = FORMAT([Unidades Vendidas], "#,0")
+		calculationItem Lucro = FORMAT([Lucro], "#,0")
 
 	column 'Coluna do grupo de cálculo'
 		dataType: string

@@ -1,4 +1,4 @@
-table financials
+table fFinancials
 	lineageTag: d3aa382d-01bc-4cd4-825f-375d2c641f1d
 
 	column Segment
@@ -118,11 +118,6 @@ table financials
 		summarizeBy: none
 		sourceColumn: Date
 
-		variation Variation
-			isDefault
-			relationship: 89bf320e-0ec0-44b2-9998-6aaa9a7d1c8b
-			defaultHierarchy: LocalDateTable_68a723b5-5218-48b4-9891-c2dcde55f0d9.'Hierarquia de datas'
-
 		annotation SummarizationSetBy = Automatic
 
 		annotation UnderlyingDateTimeDataType = Date
@@ -153,19 +148,14 @@ table financials
 
 		annotation SummarizationSetBy = Automatic
 
-	column 'Alternative Date' = DATE(financials[Year], RANDBETWEEN(1, 12), RANDBETWEEN(1, 28))
+	column 'Alternative Date' = DATE(fFinancials[Year], RANDBETWEEN(1, 12), RANDBETWEEN(1, 28))
 		formatString: Short Date
 		lineageTag: 0756b622-a002-4957-978f-abf1d8abc2de
 		summarizeBy: none
 
-		variation Variation
-			isDefault
-			relationship: 5a487728-50a7-4a84-bd6d-8d0198eba538
-			defaultHierarchy: LocalDateTable_33327db4-e7fc-439b-b051-4e007028decf.'Hierarquia de datas'
-
 		annotation SummarizationSetBy = Automatic
 
-	partition financials = m
+	partition fFinancials = m
 		mode: import
 		source =
 				let
@@ -174,6 +164,8 @@ table financials
 				    #"Tipo Alterado" = Table.TransformColumnTypes(financials_Table,{{"Segment", type text}, {"Country", type text}, {"Product", type text}, {"Discount Band", type text}, {"Units Sold", type number}, {"Manufacturing Price", Int64.Type}, {"Sale Price", Int64.Type}, {"Gross Sales", type number}, {"Discounts", type number}, {"Sales", type number}, {"COGS", type number}, {"Profit", type number}, {"Date", type date}, {"Month Number", Int64.Type}, {"Month Name", type text}, {"Year", Int64.Type}})
 				in
 				 #"Tipo Alterado"
+
+	changedProperty = Name
 
 	annotation PBI_ResultType = Table
 

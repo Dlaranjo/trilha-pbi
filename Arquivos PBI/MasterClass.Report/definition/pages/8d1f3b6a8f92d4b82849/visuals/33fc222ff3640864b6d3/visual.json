@@ -20,7 +20,7 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "financials"
+                      "Entity": "fFinancials"
                     }
                   },
                   "Property": "Date"
@@ -41,7 +41,7 @@
                     "Column": {
                       "Expression": {
                         "SourceRef": {
-                          "Entity": "financials"
+                          "Entity": "fFinancials"
                         }
                       },
                       "Property": "Sales"

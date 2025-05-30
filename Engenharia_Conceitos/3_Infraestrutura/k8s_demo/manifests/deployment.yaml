@@ -1,0 +1,41 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: app-simples           # Nome do deployment
+  namespace: k8s-demo         # Namespace onde será criado
+spec:
+  replicas: 2                 # Quantidade de pods (réplicas)
+  selector:
+    matchLabels:
+      app: demo-app        # Seleciona pods com esse label
+  template:
+    metadata:
+      labels:
+        app: demo-app      # Label do pod (deve bater com o selector)
+    spec:
+      containers:
+      - name: demo-container
+        image: k8s-demo
+        imagePullPolicy: Never
+        command: ["python", "/app/app.py"]
+        ports:
+        - containerPort: 8080        # Porta exposta pelo container
+        resources:
+          requests:
+            memory: "64Mi"
+            cpu: "250m"
+          limits:
+            memory: "128Mi"
+            cpu: "500m"
+        livenessProbe:
+          httpGet:
+            path: /health
+            port: 8080
+          initialDelaySeconds: 5
+          periodSeconds: 10
+        readinessProbe:
+          httpGet:
+            path: /health
+            port: 8080
+          initialDelaySeconds: 5
+          periodSeconds: 10

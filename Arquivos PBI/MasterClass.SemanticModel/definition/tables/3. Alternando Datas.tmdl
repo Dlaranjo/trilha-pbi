@@ -10,7 +10,7 @@ table '3. Alternando Datas'
 				
 				CALCULATE(
 				    SELECTEDMEASURE(),
-				    USERELATIONSHIP(dCalendario[Date], financials[Alternative Date])
+				    USERELATIONSHIP(dCalendario[Date], fFinancials[Alternative Date])
 				)
 
 	column 'Coluna do grupo de cálculo'

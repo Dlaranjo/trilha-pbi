@@ -7,7 +7,7 @@ model Model
 		legacyRedirects
 		returnErrorValuesAsNull
 
-annotation PBI_QueryOrder = ["financials","theme_schema_documentation","Medidas"]
+annotation PBI_QueryOrder = ["fFinancials","theme_schema_documentation","Medidas"]
 
 annotation __PBI_TimeIntelligenceEnabled = 1
 
@@ -15,7 +15,7 @@ annotation PBIDesktopVersion = 2.142.1277.0 (25.04)+014fde450f93691fc9537f0758d7
 
 annotation PBI_ProTooling = ["DevMode","CalcGroup","TMDLView_Desktop"]
 
-ref table financials
+ref table fFinancials
 ref table DateTableTemplate_fcfe31ea-ea99-4868-91bf-152943cceda3
 ref table theme_schema_documentation
 ref table Medidas
@@ -29,12 +29,11 @@ ref table dCalendario
 ref table LocalDateTable_8af1f432-d5b6-49b6-af7f-c3c778028151
 ref table '3. Alternando Datas'
 ref table '2. Criando tabelas'
-ref table LocalDateTable_68a723b5-5218-48b4-9891-c2dcde55f0d9
-ref table LocalDateTable_33327db4-e7fc-439b-b051-4e007028decf
 ref table pBarras_Gabarito
 ref table pLinhas_Gabarito
 ref table pEixo_Gabarito
 ref table Gabarito
+ref table pMedidas
 
 ref cultureInfo pt-BR
 

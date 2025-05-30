@@ -22,7 +22,7 @@
                     "Column": {
                       "Expression": {
                         "SourceRef": {
-                          "Entity": "financials"
+                          "Entity": "fFinancials"
                         }
                       },
                       "Property": "Gross Sales"
@@ -41,7 +41,7 @@
                     "Column": {
                       "Expression": {
                         "SourceRef": {
-                          "Entity": "financials"
+                          "Entity": "fFinancials"
                         }
                       },
                       "Property": "Sales"
@@ -60,7 +60,7 @@
                     "Column": {
                       "Expression": {
                         "SourceRef": {
-                          "Entity": "financials"
+                          "Entity": "fFinancials"
                         }
                       },
                       "Property": "Discounts"
@@ -79,7 +79,7 @@
                     "Column": {
                       "Expression": {
                         "SourceRef": {
-                          "Entity": "financials"
+                          "Entity": "fFinancials"
                         }
                       },
                       "Property": "Profit"
@@ -103,7 +103,7 @@
                   "Column": {
                     "Expression": {
                       "SourceRef": {
-                        "Entity": "financials"
+                        "Entity": "fFinancials"
                       }
                     },
                     "Property": "Gross Sales"

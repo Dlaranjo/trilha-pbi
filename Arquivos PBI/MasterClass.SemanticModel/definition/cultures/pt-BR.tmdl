@@ -24,7 +24,7 @@ cultureInfo pt-BR
 			    "financials": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "financials"
+			          "ConceptualEntity": "fFinancials"
 			        }
 			      },
 			      "State": "Generated",
@@ -39,7 +39,7 @@ cultureInfo pt-BR
 			    "financials.segment": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "financials",
+			          "ConceptualEntity": "fFinancials",
 			          "ConceptualProperty": "Segment"
 			        }
 			      },
@@ -155,7 +155,7 @@ cultureInfo pt-BR
 			    "financials.country": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "financials",
+			          "ConceptualEntity": "fFinancials",
 			          "ConceptualProperty": "Country"
 			        }
 			      },
@@ -191,7 +191,7 @@ cultureInfo pt-BR
 			    "financials.product": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "financials",
+			          "ConceptualEntity": "fFinancials",
 			          "ConceptualProperty": "Product"
 			        }
 			      },
@@ -247,7 +247,7 @@ cultureInfo pt-BR
 			    "financials.discount_band": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "financials",
+			          "ConceptualEntity": "fFinancials",
 			          "ConceptualProperty": "Discount Band"
 			        }
 			      },
@@ -369,7 +369,7 @@ cultureInfo pt-BR
 			    "financials.unit_sold": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "financials",
+			          "ConceptualEntity": "fFinancials",
 			          "ConceptualProperty": "Units Sold"
 			        }
 			      },
@@ -475,7 +475,7 @@ cultureInfo pt-BR
 			    "financials.manufacturing_price": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "financials",
+			          "ConceptualEntity": "fFinancials",
 			          "ConceptualProperty": "Manufacturing Price"
 			        }
 			      },
@@ -597,7 +597,7 @@ cultureInfo pt-BR
 			    "financials.sale_price": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "financials",
+			          "ConceptualEntity": "fFinancials",
 			          "ConceptualProperty": "Sale Price"
 			        }
 			      },
@@ -719,7 +719,7 @@ cultureInfo pt-BR
 			    "financials.gross_sale": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "financials",
+			          "ConceptualEntity": "fFinancials",
 			          "ConceptualProperty": "Gross Sales"
 			        }
 			      },
@@ -835,7 +835,7 @@ cultureInfo pt-BR
 			    "financials.discount": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "financials",
+			          "ConceptualEntity": "fFinancials",
 			          "ConceptualProperty": "Discounts"
 			        }
 			      },
@@ -901,7 +901,7 @@ cultureInfo pt-BR
 			    "financials.sale": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "financials",
+			          "ConceptualEntity": "fFinancials",
 			          "ConceptualProperty": "Sales"
 			        }
 			      },
@@ -987,7 +987,7 @@ cultureInfo pt-BR
 			    "financials.cog": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "financials",
+			          "ConceptualEntity": "fFinancials",
 			          "ConceptualProperty": "COGS"
 			        }
 			      },
@@ -1083,7 +1083,7 @@ cultureInfo pt-BR
 			    "financials.profit": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "financials",
+			          "ConceptualEntity": "fFinancials",
 			          "ConceptualProperty": "Profit"
 			        }
 			      },
@@ -1199,7 +1199,7 @@ cultureInfo pt-BR
 			    "financials.date": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "financials",
+			          "ConceptualEntity": "fFinancials",
 			          "ConceptualProperty": "Date"
 			        }
 			      },
@@ -1236,7 +1236,7 @@ cultureInfo pt-BR
 			    "financials.date.hierarquia_de_data": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "financials",
+			          "ConceptualEntity": "fFinancials",
 			          "VariationSource": "Date",
 			          "VariationSet": "Variation",
 			          "Hierarchy": "Hierarquia de datas"
@@ -1324,7 +1324,7 @@ cultureInfo pt-BR
 			    "financials.date.ano": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "financials",
+			          "ConceptualEntity": "fFinancials",
 			          "VariationSource": "Date",
 			          "VariationSet": "Variation",
 			          "Hierarchy": "Hierarquia de datas",
@@ -1368,7 +1368,7 @@ cultureInfo pt-BR
 			    "financials.date.trimestre": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "financials",
+			          "ConceptualEntity": "fFinancials",
 			          "VariationSource": "Date",
 			          "VariationSet": "Variation",
 			          "Hierarchy": "Hierarquia de datas",
@@ -1412,7 +1412,7 @@ cultureInfo pt-BR
 			    "financials.date.mê": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "financials",
+			          "ConceptualEntity": "fFinancials",
 			          "VariationSource": "Date",
 			          "VariationSet": "Variation",
 			          "Hierarchy": "Hierarquia de datas",
@@ -1456,7 +1456,7 @@ cultureInfo pt-BR
 			    "financials.date.dia": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "financials",
+			          "ConceptualEntity": "fFinancials",
 			          "VariationSource": "Date",
 			          "VariationSet": "Variation",
 			          "Hierarchy": "Hierarquia de datas",
@@ -1500,7 +1500,7 @@ cultureInfo pt-BR
 			    "financials.month_number": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "financials",
+			          "ConceptualEntity": "fFinancials",
 			          "ConceptualProperty": "Month Number"
 			        }
 			      },
@@ -1536,7 +1536,7 @@ cultureInfo pt-BR
 			    "financials.month_name": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "financials",
+			          "ConceptualEntity": "fFinancials",
 			          "ConceptualProperty": "Month Name"
 			        }
 			      },
@@ -1602,7 +1602,7 @@ cultureInfo pt-BR
 			    "financials.year": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "financials",
+			          "ConceptualEntity": "fFinancials",
 			          "ConceptualProperty": "Year"
 			        }
 			      },
@@ -1629,7 +1629,7 @@ cultureInfo pt-BR
 			    "financials.alternative_date": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "financials",
+			          "ConceptualEntity": "fFinancials",
 			          "ConceptualProperty": "Alternative Date"
 			        }
 			      },
@@ -1666,7 +1666,7 @@ cultureInfo pt-BR
 			    "financials.alternative_date.hierarquia_de_data": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "financials",
+			          "ConceptualEntity": "fFinancials",
 			          "VariationSource": "Alternative Date",
 			          "VariationSet": "Variation",
 			          "Hierarchy": "Hierarquia de datas"
@@ -1754,7 +1754,7 @@ cultureInfo pt-BR
 			    "financials.alternative_date.ano": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "financials",
+			          "ConceptualEntity": "fFinancials",
 			          "VariationSource": "Alternative Date",
 			          "VariationSet": "Variation",
 			          "Hierarchy": "Hierarquia de datas",
@@ -1798,7 +1798,7 @@ cultureInfo pt-BR
 			    "financials.alternative_date.trimestre": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "financials",
+			          "ConceptualEntity": "fFinancials",
 			          "VariationSource": "Alternative Date",
 			          "VariationSet": "Variation",
 			          "Hierarchy": "Hierarquia de datas",
@@ -1842,7 +1842,7 @@ cultureInfo pt-BR
 			    "financials.alternative_date.mê": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "financials",
+			          "ConceptualEntity": "fFinancials",
 			          "VariationSource": "Alternative Date",
 			          "VariationSet": "Variation",
 			          "Hierarchy": "Hierarquia de datas",
@@ -1886,7 +1886,7 @@ cultureInfo pt-BR
 			    "financials.alternative_date.dia": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "financials",
+			          "ConceptualEntity": "fFinancials",
 			          "VariationSource": "Alternative Date",
 			          "VariationSet": "Variation",
 			          "Hierarchy": "Hierarquia de datas",
@@ -2307,29 +2307,6 @@ cultureInfo pt-BR
 			            "Type": "Noun",
 			            "State": "Generated",
 			            "Weight": 0.78
-			          }
-			        }
-			      ]
-			    },
-			    "p_barra.value_4": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "pBarras",
-			          "ConceptualProperty": "Value4"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "value 4": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "Value4": {
-			            "Type": "Noun",
-			            "State": "Generated",
-			            "Weight": 0.99
 			          }
 			        }
 			      ]
@@ -2898,16 +2875,6 @@ cultureInfo pt-BR
 			            "Type": "Noun",
 			            "State": "Generated",
 			            "Weight": 0.99
-			          }
-			        },
-			        {
-			          "Ref": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
 			          }
 			        }
 			      ]
@@ -4488,7 +4455,7 @@ cultureInfo pt-BR
 			    },
 			    "financials_is_expensive": {
 			      "Binding": {
-			        "ConceptualEntity": "financials"
+			        "ConceptualEntity": "fFinancials"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -4548,7 +4515,7 @@ cultureInfo pt-BR
 			    },
 			    "financials_is_expensive1": {
 			      "Binding": {
-			        "ConceptualEntity": "financials"
+			        "ConceptualEntity": "fFinancials"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -4608,7 +4575,7 @@ cultureInfo pt-BR
 			    },
 			    "financials_in_country": {
 			      "Binding": {
-			        "ConceptualEntity": "financials"
+			        "ConceptualEntity": "fFinancials"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -4653,7 +4620,7 @@ cultureInfo pt-BR
 			    },
 			    "financials_has_medidas_unidades_vendidas": {
 			      "Binding": {
-			        "ConceptualEntity": "financials"
+			        "ConceptualEntity": "fFinancials"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -4686,7 +4653,7 @@ cultureInfo pt-BR
 			    },
 			    "financials_has_segment": {
 			      "Binding": {
-			        "ConceptualEntity": "financials"
+			        "ConceptualEntity": "fFinancials"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -4719,7 +4686,7 @@ cultureInfo pt-BR
 			    },
 			    "financials_has_country": {
 			      "Binding": {
-			        "ConceptualEntity": "financials"
+			        "ConceptualEntity": "fFinancials"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -4752,7 +4719,7 @@ cultureInfo pt-BR
 			    },
 			    "financials_has_product": {
 			      "Binding": {
-			        "ConceptualEntity": "financials"
+			        "ConceptualEntity": "fFinancials"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -4785,7 +4752,7 @@ cultureInfo pt-BR
 			    },
 			    "financials_has_discount_band": {
 			      "Binding": {
-			        "ConceptualEntity": "financials"
+			        "ConceptualEntity": "fFinancials"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -4818,7 +4785,7 @@ cultureInfo pt-BR
 			    },
 			    "financials_has_unit_sold": {
 			      "Binding": {
-			        "ConceptualEntity": "financials"
+			        "ConceptualEntity": "fFinancials"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -4851,7 +4818,7 @@ cultureInfo pt-BR
 			    },
 			    "financials_has_gross_sale": {
 			      "Binding": {
-			        "ConceptualEntity": "financials"
+			        "ConceptualEntity": "fFinancials"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -4884,7 +4851,7 @@ cultureInfo pt-BR
 			    },
 			    "financials_has_discount": {
 			      "Binding": {
-			        "ConceptualEntity": "financials"
+			        "ConceptualEntity": "fFinancials"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -4917,7 +4884,7 @@ cultureInfo pt-BR
 			    },
 			    "financials_has_sale": {
 			      "Binding": {
-			        "ConceptualEntity": "financials"
+			        "ConceptualEntity": "fFinancials"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -4950,7 +4917,7 @@ cultureInfo pt-BR
 			    },
 			    "financials_has_cog": {
 			      "Binding": {
-			        "ConceptualEntity": "financials"
+			        "ConceptualEntity": "fFinancials"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -4983,7 +4950,7 @@ cultureInfo pt-BR
 			    },
 			    "financials_has_profit": {
 			      "Binding": {
-			        "ConceptualEntity": "financials"
+			        "ConceptualEntity": "fFinancials"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -5016,7 +4983,7 @@ cultureInfo pt-BR
 			    },
 			    "financials_has_date": {
 			      "Binding": {
-			        "ConceptualEntity": "financials"
+			        "ConceptualEntity": "fFinancials"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -5049,7 +5016,7 @@ cultureInfo pt-BR
 			    },
 			    "financials_has_month_number": {
 			      "Binding": {
-			        "ConceptualEntity": "financials"
+			        "ConceptualEntity": "fFinancials"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -5082,7 +5049,7 @@ cultureInfo pt-BR
 			    },
 			    "financials_has_month_name": {
 			      "Binding": {
-			        "ConceptualEntity": "financials"
+			        "ConceptualEntity": "fFinancials"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -5115,7 +5082,7 @@ cultureInfo pt-BR
 			    },
 			    "financials_has_year": {
 			      "Binding": {
-			        "ConceptualEntity": "financials"
+			        "ConceptualEntity": "fFinancials"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -5148,7 +5115,7 @@ cultureInfo pt-BR
 			    },
 			    "financials_has_alternative_date": {
 			      "Binding": {
-			        "ConceptualEntity": "financials"
+			        "ConceptualEntity": "fFinancials"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -5412,7 +5379,7 @@ cultureInfo pt-BR
 			    },
 			    "financials_has_medida_vendas": {
 			      "Binding": {
-			        "ConceptualEntity": "financials"
+			        "ConceptualEntity": "fFinancials"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -5445,7 +5412,7 @@ cultureInfo pt-BR
 			    },
 			    "financials_has_medida_lucro": {
 			      "Binding": {
-			        "ConceptualEntity": "financials"
+			        "ConceptualEntity": "fFinancials"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -6316,7 +6283,7 @@ cultureInfo pt-BR
 			    },
 			    "financials_date_has_hierarquia_de_data": {
 			      "Binding": {
-			        "ConceptualEntity": "financials"
+			        "ConceptualEntity": "fFinancials"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -6349,7 +6316,7 @@ cultureInfo pt-BR
 			    },
 			    "financials_date_hierarquia_de_data_has_financials_date_ano": {
 			      "Binding": {
-			        "ConceptualEntity": "financials"
+			        "ConceptualEntity": "fFinancials"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -6382,7 +6349,7 @@ cultureInfo pt-BR
 			    },
 			    "financials_date_hierarquia_de_data_has_financials_date_trimestre": {
 			      "Binding": {
-			        "ConceptualEntity": "financials"
+			        "ConceptualEntity": "fFinancials"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -6415,7 +6382,7 @@ cultureInfo pt-BR
 			    },
 			    "financials_date_hierarquia_de_data_has_financials_date_mê": {
 			      "Binding": {
-			        "ConceptualEntity": "financials"
+			        "ConceptualEntity": "fFinancials"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -6448,7 +6415,7 @@ cultureInfo pt-BR
 			    },
 			    "financials_date_hierarquia_de_data_has_financials_date_dia": {
 			      "Binding": {
-			        "ConceptualEntity": "financials"
+			        "ConceptualEntity": "fFinancials"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -6481,7 +6448,7 @@ cultureInfo pt-BR
 			    },
 			    "financials_date_ano_has_financials_date_trimestre": {
 			      "Binding": {
-			        "ConceptualEntity": "financials"
+			        "ConceptualEntity": "fFinancials"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -6547,7 +6514,7 @@ cultureInfo pt-BR
 			    },
 			    "financials_date_trimestre_has_financials_date_mê": {
 			      "Binding": {
-			        "ConceptualEntity": "financials"
+			        "ConceptualEntity": "fFinancials"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -6613,7 +6580,7 @@ cultureInfo pt-BR
 			    },
 			    "financials_date_mê_has_financials_date_dia": {
 			      "Binding": {
-			        "ConceptualEntity": "financials"
+			        "ConceptualEntity": "fFinancials"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -6679,7 +6646,7 @@ cultureInfo pt-BR
 			    },
 			    "financials_alternative_date_has_hierarquia_de_data": {
 			      "Binding": {
-			        "ConceptualEntity": "financials"
+			        "ConceptualEntity": "fFinancials"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -6712,7 +6679,7 @@ cultureInfo pt-BR
 			    },
 			    "financials_alternative_date_hierarquia_de_data_has_financials_alternative_date_ano": {
 			      "Binding": {
-			        "ConceptualEntity": "financials"
+			        "ConceptualEntity": "fFinancials"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -6745,7 +6712,7 @@ cultureInfo pt-BR
 			    },
 			    "financials_alternative_date_hierarquia_de_data_has_financials_alternative_date_trimestre": {
 			      "Binding": {
-			        "ConceptualEntity": "financials"
+			        "ConceptualEntity": "fFinancials"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -6778,7 +6745,7 @@ cultureInfo pt-BR
 			    },
 			    "financials_alternative_date_hierarquia_de_data_has_financials_alternative_date_mê": {
 			      "Binding": {
-			        "ConceptualEntity": "financials"
+			        "ConceptualEntity": "fFinancials"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -6811,7 +6778,7 @@ cultureInfo pt-BR
 			    },
 			    "financials_alternative_date_hierarquia_de_data_has_financials_alternative_date_dia": {
 			      "Binding": {
-			        "ConceptualEntity": "financials"
+			        "ConceptualEntity": "fFinancials"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -6844,7 +6811,7 @@ cultureInfo pt-BR
 			    },
 			    "financials_alternative_date_ano_has_financials_alternative_date_trimestre": {
 			      "Binding": {
-			        "ConceptualEntity": "financials"
+			        "ConceptualEntity": "fFinancials"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -6910,7 +6877,7 @@ cultureInfo pt-BR
 			    },
 			    "financials_alternative_date_trimestre_has_financials_alternative_date_mê": {
 			      "Binding": {
-			        "ConceptualEntity": "financials"
+			        "ConceptualEntity": "fFinancials"
 			      },
 			      "State": "Generated",
 			      "Roles": {
@@ -6976,7 +6943,7 @@ cultureInfo pt-BR
 			    },
 			    "financials_alternative_date_mê_has_financials_alternative_date_dia": {
 			      "Binding": {
-			        "ConceptualEntity": "financials"
+			        "ConceptualEntity": "fFinancials"
 			      },
 			      "State": "Generated",
 			      "Roles": {

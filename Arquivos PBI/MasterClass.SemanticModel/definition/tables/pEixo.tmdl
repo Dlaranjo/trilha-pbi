@@ -39,7 +39,7 @@ table pEixo
 	column Value4
 		formatString: 0
 		lineageTag: fbf239de-c1c1-4a6a-87e0-f3d6b6db4595
-		summarizeBy: sum
+		summarizeBy: none
 		isNameInferred
 		sourceColumn: [Value4]
 
@@ -49,9 +49,9 @@ table pEixo
 		mode: import
 		source =
 				{
-				    ("Country", NAMEOF('financials'[Country]), 0, 1),
-				    ("Product", NAMEOF('financials'[Product]), 1, 2),
-				    ("Segment", NAMEOF('financials'[Segment]), 2, 2)
+				    ("Country", NAMEOF('fFinancials'[Country]), 0, 1),
+				    ("Product", NAMEOF('fFinancials'[Product]), 1, 2),
+				    ("Segment", NAMEOF('fFinancials'[Segment]), 2, 2)
 				}
 
 	annotation PBI_Id = c39014a1dd5d42ab8bc6983abb0db2bf

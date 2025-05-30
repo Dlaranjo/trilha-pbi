@@ -20,7 +20,7 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "financials"
+                      "Entity": "fFinancials"
                     }
                   },
                   "Property": "Date"
@@ -34,7 +34,7 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "financials"
+                      "Entity": "fFinancials"
                     }
                   },
                   "Property": "Country"
@@ -48,7 +48,7 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "financials"
+                      "Entity": "fFinancials"
                     }
                   },
                   "Property": "Discount Band"
@@ -64,7 +64,7 @@
                     "Column": {
                       "Expression": {
                         "SourceRef": {
-                          "Entity": "financials"
+                          "Entity": "fFinancials"
                         }
                       },
                       "Property": "Gross Sales"
@@ -83,7 +83,7 @@
                     "Column": {
                       "Expression": {
                         "SourceRef": {
-                          "Entity": "financials"
+                          "Entity": "fFinancials"
                         }
                       },
                       "Property": "Sales"

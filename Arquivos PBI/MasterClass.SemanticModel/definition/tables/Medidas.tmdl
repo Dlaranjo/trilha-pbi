@@ -33,9 +33,9 @@ table Medidas
 
 	measure 'Grafico de Barras SVG' = ```
 			
-			VAR vendas = SUM( financials[Gross Sales] )
-			VAR maxvendas = MAXX( ALLSELECTED( financials[Product] ), CALCULATE(SUM(financials[Gross Sales])) )
-			VAR media_vendas = AVERAGEX( ALLSELECTED( financials[Product] ), CALCULATE(SUM( financials[Gross Sales] )) )
+			VAR vendas = SUM( fFinancials[Gross Sales] )
+			VAR maxvendas = MAXX( ALLSELECTED( fFinancials[Product] ), CALCULATE(SUM(fFinancials[Gross Sales])) )
+			VAR media_vendas = AVERAGEX( ALLSELECTED( fFinancials[Product] ), CALCULATE(SUM( fFinancials[Gross Sales] )) )
 			VAR largura = INT(DIVIDE(vendas, maxvendas) * 120)
 			VAR pos_media = INT(DIVIDE(media_vendas, maxvendas) * 120)
 			
@@ -54,26 +54,28 @@ table Medidas
 			</svg>"
 			
 			RETURN
-			IF( HASONEVALUE( financials[Product] ), svg )
+			IF( HASONEVALUE( fFinancials[Product] ), svg )
 			
 			```
 		displayFolder: Svgs Prontos
 		lineageTag: f87528aa-f4ef-4fa9-807a-1934d037c28b
 		dataCategory: ImageUrl
 
-	measure Vendas = SUM(financials[Sales])
+	measure Vendas = SUM(fFinancials[Sales])
 		displayFolder: Parametros
 		lineageTag: 7a2501c2-a7ab-4624-ac23-07c52ca818a3
 
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
-	measure Lucro = SUM(financials[Profit])
+	measure Lucro =
+			
+			SUM(fFinancials[Profit])
 		displayFolder: Parametros
 		lineageTag: 49479118-f212-4ce7-9864-bb50b4a216ad
 
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
-	measure 'Unidades Vendidas' = SUM(financials[Units Sold])
+	measure 'Unidades Vendidas' = SUM(fFinancials[Units Sold])
 		displayFolder: Parametros
 		lineageTag: b42835e6-a511-451b-9e6d-74c220d67e10
 

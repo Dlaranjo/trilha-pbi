@@ -49,9 +49,9 @@ table pLegenda
 		mode: import
 		source =
 				{
-				    ("Country", NAMEOF('financials'[Country]), 0, 2),
-				    ("Product", NAMEOF('financials'[Product]), 1, 1),
-				    ("Segment", NAMEOF('financials'[Segment]), 2, 0)
+				    ("Country", NAMEOF('fFinancials'[Country]), 0, 2),
+				    ("Product", NAMEOF('fFinancials'[Product]), 1, 1),
+				    ("Segment", NAMEOF('fFinancials'[Segment]), 2, 0)
 				}
 
 	annotation PBI_Id = c55d3aa2e4664a0e9890526a7dc9e672

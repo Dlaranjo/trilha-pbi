@@ -20,13 +20,13 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "financials"
+                      "Entity": "fFinancials"
                     }
                   },
                   "Property": "Product"
                 }
               },
-              "queryRef": "financials.Product",
+              "queryRef": "fFinancials.Product",
               "nativeQueryRef": "Product",
               "active": true,
               "displayName": "Product"

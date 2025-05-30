@@ -1,0 +1,14 @@
+# O docker-compose permite orquestrar múltiplos containers e facilitar o gerenciamento do ambiente
+# Aqui usamos para rodar o serviço ETL de forma simples e reprodutível
+services:
+  etl:
+    build: .  # Constrói a imagem a partir do Dockerfile na raiz do projeto
+    container_name: etl_demo  # Nome do container para facilitar identificação
+    volumes:
+      - ./1_Processo_ETL/data_lake:/app/data_lake  # Mapeia a pasta de saída para o host (permite acessar os arquivos gerados)
+    # Você pode adicionar mais serviços aqui, como bancos de dados, Airflow, etc.
+
+# Para subir o serviço:
+# docker-compose up --build
+# Para derrubar o serviço:
+# docker-compose down 

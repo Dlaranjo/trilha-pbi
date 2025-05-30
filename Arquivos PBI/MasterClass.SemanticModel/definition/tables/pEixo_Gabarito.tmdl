@@ -48,9 +48,9 @@ table pEixo_Gabarito
 		mode: import
 		source =
 				{
-				    ("Country", NAMEOF('financials'[Country]), 0, 4),
-				    ("Product", NAMEOF('financials'[Product]), 1, 3),
-				    ("Segment", NAMEOF('financials'[Segment]), 2, 0)
+				    ("Country", NAMEOF('fFinancials'[Country]), 0, 4),
+				    ("Product", NAMEOF('fFinancials'[Product]), 1, 3),
+				    ("Segment", NAMEOF('fFinancials'[Segment]), 2, 0)
 				}
 
 	annotation PBI_Id = 45ff2e7c7ebc4e6a993a0e0056245099

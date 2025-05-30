@@ -20,7 +20,7 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "financials"
+                      "Entity": "fFinancials"
                     }
                   },
                   "Property": "Segment"
@@ -41,7 +41,7 @@
                     "Column": {
                       "Expression": {
                         "SourceRef": {
-                          "Entity": "financials"
+                          "Entity": "fFinancials"
                         }
                       },
                       "Property": "Profit"
@@ -65,7 +65,7 @@
                   "Column": {
                     "Expression": {
                       "SourceRef": {
-                        "Entity": "financials"
+                        "Entity": "fFinancials"
                       }
                     },
                     "Property": "Profit"

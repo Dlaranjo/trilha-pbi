@@ -39,7 +39,7 @@ table pLinhas
 	column Value4
 		formatString: 0
 		lineageTag: 18a6d0e3-4493-4d4a-953a-f4fbaa11f64e
-		summarizeBy: sum
+		summarizeBy: none
 		sourceColumn: [Value4]
 
 		annotation SummarizationSetBy = Automatic

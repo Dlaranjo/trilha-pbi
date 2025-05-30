@@ -1,8 +1,8 @@
-table pBarras
-	lineageTag: 7f1196c4-eef1-49f4-8040-5db2af4ac9ff
+table pMedidas
+	lineageTag: 60ce3ed5-d0ac-4fa2-b2e3-18750f319472
 
-	column pBarras
-		lineageTag: cc09c78f-17e2-415f-bdb2-ac9f7cb38609
+	column pMedidas
+		lineageTag: f5088564-fb4d-4aa0-9604-61b3a3530db7
 		summarizeBy: none
 		sourceColumn: [Value1]
 		sortByColumn: 'pMedidas Pedido'
@@ -13,8 +13,7 @@ table pBarras
 		annotation SummarizationSetBy = Automatic
 
 	column 'pMedidas Campos'
-		isHidden
-		lineageTag: 34a9ebab-f248-4469-8f63-49dde1e1b8d2
+		lineageTag: e2b82780-0178-4b1f-9472-0403b97762ca
 		summarizeBy: none
 		sourceColumn: [Value2]
 		sortByColumn: 'pMedidas Pedido'
@@ -28,31 +27,30 @@ table pBarras
 		annotation SummarizationSetBy = Automatic
 
 	column 'pMedidas Pedido'
-		isHidden
 		formatString: 0
-		lineageTag: 3654b236-32bf-4255-8a94-37231bb23df0
+		lineageTag: 7e4b276d-0e08-4171-94a8-52743ab4d8a0
 		summarizeBy: sum
 		sourceColumn: [Value3]
 
 		annotation SummarizationSetBy = Automatic
 
 	column Value4
-		formatString: 0
-		lineageTag: 68da97af-f454-46dd-93eb-ccd49aea7568
+		lineageTag: 174d8fab-e9ea-4232-bbc9-81d55cc5e2b3
 		summarizeBy: none
 		isNameInferred
 		sourceColumn: [Value4]
 
 		annotation SummarizationSetBy = Automatic
 
-	partition pBarras = calculated
+	partition pMedidas = calculated
 		mode: import
 		source =
 				{
-				    ("Vendas", NAMEOF('Medidas'[Vendas]), 0, 1),
-				    ("Unidades Vendidas", NAMEOF('Medidas'[Unidades Vendidas]), 1, 0),
-				    ("Lucro", NAMEOF('Medidas'[Lucro]), 2, 2)
+				    ("Valor", NAMEOF('Medidas'[Lucro]), 0, "Grafico_1"),
+				    ("Volume", NAMEOF('Medidas'[Unidades Vendidas]), 1, "Grafico_1"),
+				    ("Valor", NAMEOF('Medidas'[Lucro]), 2, "Grafico_2"),
+				    ("Volume", NAMEOF('Medidas'[Vendas]), 3, "Grafico_2")
 				}
 
-	annotation PBI_Id = 89537baa861d4483be905e46536294ed
+	annotation PBI_Id = 99216af737d54799b11e95eff725f5a1
 

@@ -4,14 +4,14 @@ table '1. Ampliando medidas'
 	calculationGroup
 		precedence: 2
 
+		calculationItem 'Periodo Atual' = SELECTEDMEASURE()
+
 		calculationItem 'Mes Anterior' =
 				
 				CALCULATE(
 				    SELECTEDMEASURE(),
-				    DATEADD(financials[Date], -1, MONTH)
+				    DATEADD(fFinancials[Date], -1, MONTH)
 				)
-
-		calculationItem 'Periodo Atual' = SELECTEDMEASURE()
 
 		calculationItem Projetado = SELECTEDMEASURE() * 1.4
 

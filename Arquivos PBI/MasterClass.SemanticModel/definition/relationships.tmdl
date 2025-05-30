@@ -3,16 +3,6 @@ relationship 477b7927-734d-48e4-be82-1a8b86cdb06c
 	fromColumn: dCalendario.Date
 	toColumn: LocalDateTable_8af1f432-d5b6-49b6-af7f-c3c778028151.Date
 
-relationship 89bf320e-0ec0-44b2-9998-6aaa9a7d1c8b
-	joinOnDateBehavior: datePartOnly
-	fromColumn: financials.Date
-	toColumn: LocalDateTable_68a723b5-5218-48b4-9891-c2dcde55f0d9.Date
-
-relationship 5a487728-50a7-4a84-bd6d-8d0198eba538
-	joinOnDateBehavior: datePartOnly
-	fromColumn: financials.'Alternative Date'
-	toColumn: LocalDateTable_33327db4-e7fc-439b-b051-4e007028decf.Date
-
 relationship a2ba4503-e2f1-f8d0-9824-d991b8767c48
 	fromColumn: pBarras_Gabarito.Id
 	toColumn: aGraficos.id
@@ -26,4 +16,27 @@ relationship db095843-9a32-ea53-b216-395d4c8b1f26
 relationship bdfa0ed8-bf02-3cc2-8fe2-b9b38f6a6d6c
 	fromColumn: pLinhas_Gabarito.Id
 	toColumn: aGraficos.id
+
+relationship 8de76a3d-b623-3155-98cc-fab5a01c5b85
+	crossFilteringBehavior: bothDirections
+	fromCardinality: one
+	fromColumn: aGraficos.id
+	toColumn: pBarras.Value4
+
+relationship 072f4265-9d33-06b5-222d-75943a1f5a80
+	fromColumn: pLinhas.Value4
+	toColumn: aGraficos.id
+
+relationship 3b2fe784-ecb4-5b78-29bd-a58e07d1b556
+	fromColumn: pEixo.Value4
+	toColumn: aGraficos.id
+
+relationship 3091869c-10f1-4f70-3c37-144c7feccf41
+	fromColumn: fFinancials.Date
+	toColumn: dCalendario.Date
+
+relationship fe75e72f-c592-693c-4643-4b387dc9b183
+	isActive: false
+	fromColumn: fFinancials.'Alternative Date'
+	toColumn: dCalendario.Date
 
